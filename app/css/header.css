@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,latin-ext");
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-duration: .4s;
+  animation-duration: .4s; }
+
+@-webkit-keyframes shake {
+  from {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); }
+  20%, 60% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px); }
+  40%, 80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px); }
+  to {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); } }
+
+@keyframes shake {
+  from {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); }
+  20%, 60% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px); }
+  40%, 80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px); }
+  to {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); } }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+.advert-line {
+  -webkit-box-shadow: inset 0 -4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 -4px 10px rgba(0, 0, 0, 0.25);
+  background-color: #38a5ac;
+  text-align: center; }
+  @media (max-width: 848px) {
+    .advert-line {
+      padding-bottom: 4px; } }
+  @media (max-width: 669px) {
+    .advert-line {
+      padding-bottom: 12px; } }
+  @media (max-width: 415px) {
+    .advert-line {
+      padding: 8px 0; } }
+  .advert-line img {
+    vertical-align: middle;
+    margin-right: 70px; }
+    @media (max-width: 998px) {
+      .advert-line img {
+        margin-right: 30px; } }
+    @media (max-width: 848px) {
+      .advert-line img {
+        display: none; } }
+  .advert-line h6 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 300;
+    display: inline-block;
+    vertical-align: middle; }
+    @media (max-width: 947px) {
+      .advert-line h6 {
+        margin-right: 30px; } }
+    @media (max-width: 669px) {
+      .advert-line h6 {
+        margin-right: 0; } }
+    @media (max-width: 515px) {
+      .advert-line h6 {
+        font-size: 18px; } }
+    @media (max-width: 415px) {
+      .advert-line h6 {
+        font-size: 19px;
+        width: 157px;
+        line-height: 24px; } }
+    .advert-line h6 span {
+      font-size: 30px;
+      font-weight: 400; }
+      @media (max-width: 515px) {
+        .advert-line h6 span {
+          font-size: 24px; } }
+      @media (max-width: 415px) {
+        .advert-line h6 span {
+          font-size: 16px;
+          font-weight: 600; } }
+  .advert-line .btn-white {
+    vertical-align: middle; }
+    @media (max-width: 669px) {
+      .advert-line .btn-white {
+        margin: 0 20px;
+        margin-top: 5px; } }
+    @media (max-width: 415px) {
+      .advert-line .btn-white {
+        margin-top: 0;
+        margin-right: 0; } }
+    @media (max-width: 338px) {
+      .advert-line .btn-white {
+        margin: 10px; } }
+  .advert-line .arrow {
+    margin: 0 30px;
+    margin-left: 40px; }
+    @media (max-width: 998px) {
+      .advert-line .arrow {
+        margin: 0 30px; } }
+    @media (max-width: 947px) {
+      .advert-line .arrow {
+        display: none; } }
+
+.btn-white {
+  -webkit-box-shadow: 0 2px 0 #006666;
+  box-shadow: 0 2px 0 #006666;
+  background-color: #ffffff;
+  color: #263139;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 7px 29px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px; }
+  .btn-white:hover, .btn-white:focus {
+    background-color: #b3b3b3;
+    color: white; }

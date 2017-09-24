@@ -1,0 +1,104 @@
+
+.allert, .allert_tell {
+    position: absolute;
+    z-index: 20;
+    top: 15px;
+    right: 18px;
+    display: block;
+    height: 20px;
+    color: #FF6565;
+    cursor: default;
+}
+
+.er_border, .error {
+    border: 1px solid red!important;
+}
+
+.allert:hover, .allert_tell:hover{
+    text-decoration : none;
+}
+
+.allert span, .allert_tell span {
+    display: none;
+    opacity: 0;
+    padding : 5px;
+    margin-left : 5px;
+    color:#000;
+    font-style:italic;
+    font-size: 14px;
+    border-radius: 4px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    min-width: 140px;
+    text-align: left;
+}
+
+.allert:hover span, .allert_tell:hover span {
+    border : 1px solid #FF6565;
+    background : #fff;
+    display : inline;
+    position : absolute;
+    color : #4e4e4e;
+    right:24px;
+    top:-6px;
+    opacity: 1;
+}
+
+.field {
+    position: relative;
+    float: left;
+    .allert{
+        .fa-exclamation-triangle{
+            display: block;
+            background-size: 100%;
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
+.jb_input .field {
+    width: 100%;
+}
+
+.jb_input {
+ /*   overflow: hidden;*/
+}
+
+.jb_input .tooltip-arrow {}
+.jb_input .mess_error {position: relative; width: 100%; padding: 5px 0px; top: -5px; float: left;}
+a{
+    text-decoration: none;
+    outline: none;
+    &:hover,&:focus{
+        text-decoration: none;
+        outline: none;
+    }
+}
+
+.clearfix{
+    &:after{
+        clear: both;
+    }
+}
+
+.inner{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.icon{
+    display: inline-block;
+}
+
+.btn{
+    display: inline-block;
+    transition: .2s all;
+}
+
+
+
+
+
