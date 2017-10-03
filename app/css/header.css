@@ -35,6 +35,9 @@
     -webkit-transform: translateX(0px);
     transform: translateX(0px); } }
 
+html {
+  overflow: hidden; }
+
 body {
   font-family: 'Open Sans', sans-serif;
   max-width: 1920px;
