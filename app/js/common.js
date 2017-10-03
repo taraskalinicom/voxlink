@@ -14,6 +14,17 @@ $(function() {
 
     $('.popup').magnificPopup();
 
+    $('.hamburger').on('click',function(){
+        $(this).toggleClass('is-active');
+        $(".header-mnu ul").toggleClass('is-active');
+    });
+    $(document).on("click",function(event){
+        if( $(event.target).closest(".header-mnu ul,.hamburger").length )return;
+        $('.hamburger').removeClass('is-active');
+        $(".header-mnu ul").removeClass('is-active');
+        event.stopPropagation();
+    });
+
 });
 
 //Форма отправки 2.0

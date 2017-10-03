@@ -1,136 +1,7 @@
 @import url(../libs/lightslider/dist/css/lightslider.min.css);
 @import url(../libs/magnific-popup/dist/magnific-popup.css);
-/*!
- * Hamburgers
- * @description Tasty CSS-animated hamburgers
- * @author Jonathan Suh @jonsuh
- * @site https://jonsuh.com/hamburgers
- * @link https://github.com/jonsuh/hamburgers
- */
-.hamburger {
-  padding: 15px 15px;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-transition-property: opacity, -webkit-filter;
-  transition-property: opacity, -webkit-filter;
-  transition-property: opacity, filter;
-  transition-property: opacity, filter, -webkit-filter;
-  -webkit-transition-duration: 0.15s;
-  transition-duration: 0.15s;
-  -webkit-transition-timing-function: linear;
-  transition-timing-function: linear;
-  font: inherit;
-  color: inherit;
-  text-transform: none;
-  background-color: transparent;
-  border: 0;
-  margin: 0;
-  overflow: visible; }
-  .hamburger:hover {
-    opacity: 1; }
-
-.hamburger-box {
-  width: 40px;
-  height: 24px;
-  display: inline-block;
-  position: relative; }
-
-.hamburger-inner {
-  display: block;
-  top: 50%;
-  margin-top: -2px; }
-  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-    width: 40px;
-    height: 4px;
-    background-color: #000;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    position: absolute;
-    -webkit-transition-property: -webkit-transform;
-    transition-property: -webkit-transform;
-    transition-property: transform;
-    transition-property: transform, -webkit-transform;
-    -webkit-transition-duration: 0.15s;
-    transition-duration: 0.15s;
-    -webkit-transition-timing-function: ease;
-    transition-timing-function: ease; }
-  .hamburger-inner::before, .hamburger-inner::after {
-    content: "";
-    display: block; }
-  .hamburger-inner::before {
-    top: -10px; }
-  .hamburger-inner::after {
-    bottom: -10px; }
-
-/*
-   * Elastic
-   */
-.hamburger--elastic .hamburger-inner {
-  top: 2px;
-  -webkit-transition-duration: 0.275s;
-  transition-duration: 0.275s;
-  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); }
-  .hamburger--elastic .hamburger-inner::before {
-    top: 10px;
-    -webkit-transition: opacity 0.125s 0.275s ease;
-    transition: opacity 0.125s 0.275s ease; }
-  .hamburger--elastic .hamburger-inner::after {
-    top: 20px;
-    -webkit-transition: -webkit-transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition: -webkit-transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
-
-.hamburger--elastic.is-active .hamburger-inner {
-  -webkit-transform: translate3d(0, 10px, 0) rotate(135deg);
-  transform: translate3d(0, 10px, 0) rotate(135deg);
-  -webkit-transition-delay: 0.075s;
-  transition-delay: 0.075s; }
-  .hamburger--elastic.is-active .hamburger-inner::before {
-    -webkit-transition-delay: 0s;
-    transition-delay: 0s;
-    opacity: 0; }
-  .hamburger--elastic.is-active .hamburger-inner::after {
-    -webkit-transform: translate3d(0, -20px, 0) rotate(-270deg);
-    transform: translate3d(0, -20px, 0) rotate(-270deg);
-    -webkit-transition-delay: 0.075s;
-    transition-delay: 0.075s; }
-
-/*
-   * Elastic Reverse
-   */
-.hamburger--elastic-r .hamburger-inner {
-  top: 2px;
-  -webkit-transition-duration: 0.275s;
-  transition-duration: 0.275s;
-  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); }
-  .hamburger--elastic-r .hamburger-inner::before {
-    top: 10px;
-    -webkit-transition: opacity 0.125s 0.275s ease;
-    transition: opacity 0.125s 0.275s ease; }
-  .hamburger--elastic-r .hamburger-inner::after {
-    top: 20px;
-    -webkit-transition: -webkit-transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition: -webkit-transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
-
-.hamburger--elastic-r.is-active .hamburger-inner {
-  -webkit-transform: translate3d(0, 10px, 0) rotate(-135deg);
-  transform: translate3d(0, 10px, 0) rotate(-135deg);
-  -webkit-transition-delay: 0.075s;
-  transition-delay: 0.075s; }
-  .hamburger--elastic-r.is-active .hamburger-inner::before {
-    -webkit-transition-delay: 0s;
-    transition-delay: 0s;
-    opacity: 0; }
-  .hamburger--elastic-r.is-active .hamburger-inner::after {
-    -webkit-transform: translate3d(0, -20px, 0) rotate(270deg);
-    transform: translate3d(0, -20px, 0) rotate(270deg);
-    -webkit-transition-delay: 0.075s;
-    transition-delay: 0.075s; }
+footer {
+  height: 449px; }
 
 .allert, .allert_tell {
   position: absolute;
@@ -241,3 +112,18 @@ a {
   width: 38px;
   height: 32px;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAgCAMAAABJuvqBAAAAAXNSR0IB2cksfwAAAFFQTFRFAAAA39/f3d3d3d3d39/f3d3d3d3d3d3d3Nzc3Nzc3Nzc3d3d3Nzc39/f3d3d3d3d3d3d39/f3d3d3Nzc3d3d3Nzc3d3d3Nzc3Nzc3d3d3d3dn0MdxQAAABt0Uk5TAECf7yB/3/+wX6/wYDCP4NAQz6BwUIC/wG+QWO9AswAAAWFJREFUeJyNk9uSgyAQREGQxoyIqCDr/3/ogpqEeNlsP6hFNVNnph3GvopX4qtH1grQX0zNAwCh/ctjOmF7oOdwtx7XDNBtBYxuHO9MvIKdnBdAYEz4O2oaDZMzgRKVpxvq2CaYHxFnMulAL5fUi8wfM01Dn9EdzAX1xlFj4WJcG2ztBfX2OVjeZvisYTpRb0U7BNfRPlIJeaRe5VVv3IOeQCEeqLdSD5qY3OBXqb0qoWi4EVEys8OvRZ5BuQXVXiwNNN1tUUAXQUmNOt+phU6vjspsPoLiUfyYNIXMZstpHoNqLZZUqoTP0sefwyA/xOfxKSjGwJnHIeVDUFlxYoG2Xl6aw8m2aKZD6qUwFkG95BWL6bK3qnkeTf3Jla46xVcg2t7voD5EHHlwFXOB5mw0lxsVxzQTN+SRuDEHuFxucRDYXWwNsLveKI/eqPd4ebzcqNSDEreLW8jiP65zzoV+AXcyERpYx8ipAAAAAElFTkSuQmCC); }
+
+.icon-korz {
+  width: 24px;
+  height: 20px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAUCAYAAACXtf2DAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAABeklEQVQ4y61UwY3jMAwcGgvouSnhroNcB94O0sGmg7M/sfXzj5Q/uhJ2O8hVkJTgEpIO/HQERNyP95A4DnBxPIAeFMfkaCyKnHMZgFcAIKK/m82mwYxIACDGSDHGn+fzOZuz+BXqul6KyKzqbyAi7dw1k8tAVRtmTuds8DKI90S0E5FZiqvq8WrDObcSke2QKCL6SAwAzFyJyJ+rE8QYGwDLZ5V77xen0+m3qv6iEbUt+rl40p5Pa+36JiEi2+GPftQiZj7Udb0EBreo79wASDERzLwGcPh+EWiEkBLR7kl73qy1+9Gk934xHLj/tYiZU2Y+XOZuLMrzvFXVlpl/TBBf9esfaIzFzB9E9D7BmqO1doqw6aB7CefcSlVTADDGVHmet0NOP1AVABDRviiK7ZCT3GugqmlZlpkxpgohrMc4XddlxpiqLMssxrgc49xt8K2w67pV/4TcfpwkTQgh9d4viGjxUIML5Yd7d7ooim2MsQ0hrI0x1RjnC/o1yiF49r2BAAAAAElFTkSuQmCC); }
+
+.icon-shapka {
+  width: 30px;
+  height: 18px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAASCAMAAAB7LJ7rAAAAAXNSR0IB2cksfwAAAFFQTFRFAAAAdXV1eHh4dnZ2d3d3d3d3d3d3cHBwdnZ2dnZ2eHh4dnZ2d3d3dnZ2d3d3dnZ2d3d3dnZ2d3d3eHh4dnZ2dnZ2dXV1dnZ2d3d3d3d3dnZ2MTT9cwAAABt0Uk5TADBgz//fbxDvfyCPn1C/X/DgkECAwD+gsNBwA46tQQAAAKxJREFUeJx9kNsOhCAMRBGLFVZWLgKu//+hWzEqBON5IMBM02kZq+nYC7wHMeCzhoOAnVE+GNRnhJPG0E1QURn0FxpOA86iFS9DZ663dV4xpd31M2qqXmy+B0/5YoxUwrPBpGMJfg1gPcU7sguJGODHz3B+YQqZK7rycnsk01HFKofe+lc5GXyTecrVSeeG6DdbySvs1aLwV/KBM5OkseMs+30FDchdIBxX998fdmEI6emlCCYAAAAASUVORK5CYII=); }
+
+.icon-arrow-grey {
+  width: 5px;
+  height: 9px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAJAQMAAADAY3TdAAAAAXNSR0IB2cksfwAAAAZQTFRFrKysAAAAedO8cAAAAAJ0Uk5T/wDltzBKAAAAGklEQVR4nGOoYNjBcIPhBcMHIL4BZFcwEAEAMtUG0YRA9KUAAAAASUVORK5CYII=); }
