@@ -69,7 +69,8 @@ gulp.task('scripts', function() {
         './app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
         './app/libs/lightslider/dist/js/lightslider.min.js',
         './app/libs/tether/dist/js/tether.min.js',
-        './app/libs/jquery.countdown/dist/jquery.countdown.min.js'
+        './app/libs/jquery.countdown/dist/jquery.countdown.min.js',
+        './app/libs/page-scroll-to-id/jquery.malihu.PageScroll2id.js'
     ])
         .pipe(concat('libs.js'))
         //.pipe(uglify()) //Minify libs.js

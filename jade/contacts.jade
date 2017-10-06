@@ -1,0 +1,80 @@
+extends layouts/html.jade
+block content
+    .bread-line
+        .inner
+            .container-fluid
+                .row
+                    .col-md-12
+                        .name-razdel
+                            i.icon.icon-onas
+                            span О нас
+                        .bread-crumbs
+                            a(href="#") Главная
+                            i.icon.icon-arrow-grey
+                            a(href="#") О нас
+                            i.icon.icon-arrow-grey
+                            a(href="#") Контакты
+    .contacts-content
+        .inner
+            .container-fluid
+                .row
+                    .col-md-6
+                        .contacts-item
+                            h2
+                                |Контакты
+                                br
+                                span  вязаться с нами Вы можете любым удобным способом
+                            .foot-item.foot-item-mod
+                                i.icon.icon-contact1
+                                .foot-item-right
+                                    h6
+                                        |8 (495) 989-85-33
+                                        br
+                                        span  звонки по Москве
+                                    h6
+                                        |8 (800) 333-75-33
+                                        br
+                                        span  звонки по России
+                            .foot-item
+                                i.icon.icon-contact2
+                                .foot-item-right
+                                    p г.Москва, ул. Гостиничная,
+                                        br
+                                        |дом 3 офис 314.
+                            .foot-item
+                                i.icon.icon-contact3
+                                .foot-item-right
+                                    p team@voxlink.ru
+                            a.btn.btn-download(href="#")
+                                i.icon.icon-download
+                                p
+                                    |Скачать схему проезда
+                                    br
+                                    span  jpg, 259 Кбайт
+                            a.btn.btn-download(href="#")
+                                i.icon.icon-download
+                                p
+                                    |Скачать реквизиты
+                                    br
+                                    span  jpg, 75 Кбайт
+                    .col-md-6
+                        .contacts-item
+                            h2
+                                |Обратная связь
+                                br
+                                span  Также Вы можете оставить заявку, чтобы с Вами связался наш специалист
+                            .contacts-form.form-block
+                                form.form-shake
+                                    label
+                                        p ФИО
+                                        input(type="text" name="name" required)
+                                    label
+                                        p Email
+                                        input(type="text" name="email" required)
+                                    label
+                                        p Текст вашего сообщения
+                                        textarea(name="comment" required)
+                                    button.btn.btn-contact(name="send") Отправить
+
+        .contact-map
+            img(src="img/contact-map.jpg")

@@ -25,6 +25,32 @@ $(function() {
         event.stopPropagation();
     });
 
+    var voipSlider = $('#voip').lightSlider({
+        adaptiveHeight:true,
+        item:1,
+        slideMargin:0,
+        loop:true,
+        pager: false,
+        controls: false
+    });
+
+    $(".voip-prev").on("click",function(e){
+        e.preventDefault();
+        voipSlider.goToPrevSlide();
+    });
+
+    $(".voip-next").on("click",function(e){
+        e.preventDefault();
+        voipSlider.goToNextSlide();
+    });
+
+    $('.cat-item-plus').on('click',function(){
+        $(this).toggleClass('is-active');
+        $(this).find(".cat-hide").slideToggle();
+    });
+
+    $("a[rel='m_PageScroll2id']").mPageScroll2id();
+
 });
 
 //Форма отправки 2.0

@@ -1,5 +1,17 @@
 extends layouts/html.jade
 block content
+    .bread-line
+        .inner
+            .container-fluid
+                .row
+                    .col-md-12
+                        .name-razdel
+                            i.icon.icon-shapka
+                            span База знаний
+                        .bread-crumbs
+                            a(href="#") Главная
+                            i.icon.icon-arrow-grey
+                            a(href="#") База знаний
     .main-content
         .inner
             .container-fluid
@@ -63,7 +75,226 @@ block content
                                             img(src="img/item11.png")
                                         p Новости и статьи
                                 .col-md-4.col-sm-6
-                    .col-lg-3.col-md-4.col-xs-12
+                    .col-lg-3.col-md-4.col-xs-12.main-xs-pad
                         .main-content-right
                             .search
                                 input(type="text" name="search" placeholder="Поиск")
+                            .category
+                                h3.orange-dot категории
+                                ul
+                                    li
+                                        a(href="#")
+                                            i.icon.icon-cat1
+                                            span Linux
+                                            .icon-sp.icon-cat-arrow
+                                    li
+                                        a(href="#")
+                                            i.icon.icon-cat2
+                                            span Интеграция с CRM
+                                            .icon-sp.icon-cat-arrow
+                                    li
+                                        a(href="#")
+                                            i.icon.icon-cat3
+                                            span Использование Elastix
+                                            .icon-sp.icon-cat-arrow
+                                    li
+                                        a(href="#")
+                                            i.icon.icon-cat4
+                                            span Установка Asterisk
+                                            .icon-sp.icon-cat-arrow
+                                    li
+                                        a(href="#")
+                                            i.icon.icon-cat5
+                                            span Настройка Asterisk
+                                            .icon-sp.icon-cat-arrow
+                                    li.cat-item-plus
+                                        a
+                                            i.icon.icon-cat6
+                                            span Настройка IP-телефонов
+                                            .icon-sp.icon-cat-plus
+                                        .cat-hide
+                                            ul
+                                                li
+                                                    a(href="#") Станции Avaya
+                                                li
+                                                    a(href="#") Станции Panasonic
+                                                li
+                                                    a(href="#") Станция FreeSwitch
+                                                li
+                                                    a(href="#") Openfire
+                                    li
+                                        a(href="#")
+                                            i.icon.icon-cat7
+                                            span Настройка VoIP-оборудования
+                                            .icon-sp.icon-cat-arrow
+                                    li.cat-item-plus
+                                        a
+                                            i.icon.icon-cat8
+                                            span Подключение операторов
+                                            .icon-sp.icon-cat-plus
+                                        .cat-hide
+                                            ul
+                                                li
+                                                    a(href="#") Станции Avaya
+                                                li
+                                                    a(href="#") Станции Panasonic
+                                                li
+                                                    a(href="#") Станция FreeSwitch
+                                                li
+                                                    a(href="#") Openfire
+                                    li
+                                        a(href="#")
+                                            i.icon.icon-cat9
+                                            span Использование FreePBX
+                                            .icon-sp.icon-cat-arrow
+                                    li.cat-item-plus
+                                        a
+                                            i.icon.icon-cat10
+                                            span Интеграция с другими АТС
+                                            .icon-sp.icon-cat-plus
+                                        .cat-hide
+                                            ul
+                                                li
+                                                    a(href="#") Станции Avaya
+                                                li
+                                                    a(href="#") Станции Panasonic
+                                                li
+                                                    a(href="#") Станция FreeSwitch
+                                                li
+                                                    a(href="#") Openfire
+                                    li
+                                        a(href="#")
+                                            i.icon.icon-cat11
+                                            span Новости и Статьи
+                                            .icon-sp.icon-cat-arrow
+                            .voip
+                                h3.orange-dot VoIP оборудование
+                                .voip-item
+                                    ul#voip.gallery.content-slider.list-unstyled.clearfix
+                                        li
+                                            img(src="img/voip-phone.png")
+                                            p
+                                                span Digium D40
+                                                br
+                                                | 11 100 руб
+                                            img(src="img/stars.png")
+                                        li
+                                            img(src="img/voip-phone.png")
+                                            p
+                                                span Digium D40
+                                                br
+                                                | 11 100 руб
+                                            img(src="img/stars.png")
+                                        li
+                                            img(src="img/voip-phone.png")
+                                            p
+                                                span Digium D40
+                                                br
+                                                | 11 100 руб
+                                            img(src="img/stars.png")
+                                        li
+                                            img(src="img/voip-phone.png")
+                                            p
+                                                span Digium D40
+                                                br
+                                                | 11 100 руб
+                                            img(src="img/stars.png")
+                                        li
+                                            img(src="img/voip-phone.png")
+                                            p
+                                                span Digium D40
+                                                br
+                                                | 11 100 руб
+                                            img(src="img/stars.png")
+                                        li
+                                            img(src="img/voip-phone.png")
+                                            p
+                                                span Digium D40
+                                                br
+                                                | 11 100 руб
+                                            img(src="img/stars.png")
+                                    .voip-arrow.voip-arrow-left.voip-prev
+                                        .voip-vn-all.voip-vn-left
+                                    .voip-arrow.voip-arrow-right.voip-next
+                                        .voip-vn-all.voip-vn-right
+                            .blizh
+                                h3.orange-dot ближайшие курсы
+                                .advert-line.advert-big
+                                    .inner
+                                        .container-fluid
+                                            .row
+                                                .col-md-12
+                                                    h6 Курсы по Asterisk
+                                                        br
+                                                        span  c 29 мая
+                                                            br
+                                                            |по 3 июня
+                                                    br
+                                                    img.arrow(src="img/arrow-bot.png")
+                                                    br
+                                                    a.btn.btn-white(href="#") Записаться
+                                                    br
+                                                    img(src="img/face-big.png")
+                            .new
+                                h3.orange-dot Новые статьи
+                                .new-content
+                                    a.new-item(href="#")
+                                        img(src="img/new-item1.jpg")
+                                        .new-block
+                                            p
+                                                |Вызов оператора
+                                                |очереди во время
+                                                |проигрывания приветствия.
+                                            .date
+                                                i.icon.icon-new1
+                                                span 29.03.2017
+                                    a.new-item(href="#")
+                                        img(src="img/new-item2.jpg")
+                                        .new-block
+                                            p
+                                                |Telegram callback
+                                            .date
+                                                i.icon.icon-new1
+                                                span 29.03.2017
+                                    a.new-item(href="#")
+                                        img(src="img/new-item3.jpg")
+                                        .new-block
+                                            p
+                                                |Мониторинг Asterisk
+                                                |средствами Pandora
+                                                |FMS
+                                            .date
+                                                i.icon.icon-new1
+                                                span 29.03.2017
+                            .stat
+                                a.stat-item(href="#")
+                                    img(src="img/stat1.jpg")
+                                    .stat-hide
+                                        i.icon.icon-plus
+                                        .opis Описание
+                                a.stat-item(href="#")
+                                    img(src="img/stat2.jpg")
+                                    .stat-hide
+                                        i.icon.icon-plus
+                                        .opis Описание
+                                a.stat-item(href="#")
+                                    img(src="img/stat3.jpg")
+                                    .stat-hide
+                                        i.icon.icon-plus
+                                        .opis Описание
+                                a.stat-item(href="#")
+                                    img(src="img/stat4.jpg")
+                                    .stat-hide
+                                        i.icon.icon-plus
+                                        .opis Описание
+                                a.stat-item(href="#")
+                                    img(src="img/stat5.jpg")
+                                    .stat-hide
+                                        i.icon.icon-plus
+                                        .opis Описание
+                                a.stat-item(href="#")
+                                    img(src="img/stat6.jpg")
+                                    .stat-hide
+                                        i.icon.icon-plus
+                                        .opis Описание
+
