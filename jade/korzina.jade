@@ -1,0 +1,39 @@
+extends layouts/html.jade
+block content
+    .bread-line
+        .inner
+            .container-fluid
+                .row
+                    .col-md-12
+                        .name-razdel
+                            i.icon.icon-partners-bread
+                            span Партнеры
+                        .bread-crumbs
+                            a(href="#") Главная
+                            i.icon.icon-arrow-grey
+                            a(href="#") О нас
+                            i.icon.icon-arrow-grey
+                            a(href="#") Контакты
+    .clients
+        .inner
+            .container-fluid
+                .row
+                    .col-xs-12
+                        h2
+                            | Наши
+                            br
+                            | клиенты
+                        .clients-content
+                            .clients-item.clients-item1
+                                img(src="img/client1.png")
+                            .clients-item.clients-item2
+                                img(src="img/client2.png")
+                            .clients-item.clients-item3
+                                img(src="img/client3.png")
+                            .clients-item.clients-item4
+                                img(src="img/client4.png")
+                            .clients-item.clients-item5
+                                img(src="img/client5.png")
+                            a.btn.btn-clients(href="#")
+                                | Посмотреть все
+                                i.icon.icon-2arrow

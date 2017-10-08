@@ -490,7 +490,7 @@ footer{
   .btn-vtop{
     position: absolute;
     top: -55px;
-    right: -25px;
+    right: -20px;
     z-index: 3;
     @if $adaptive == true {
       @media (max-width: 1199px){
@@ -508,7 +508,7 @@ footer{
     top: -30px;
     left: -358px;
     height: 514px;
-    width: 660px;
+    width: 655px;
     background-color: #292929;
     z-index: 1;
     @if $adaptive == true {
@@ -686,10 +686,157 @@ footer{
   }
 }
 
+.clients{
+  background-color: #f7f7f7;
+  padding: 40px 0;
+  h2{
+    color: #555555;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 26px;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
 
+.clients-content{
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 30px;
+  @if $adaptive == true {
+    @media (max-width: 462px){
+      margin-left: 0;
+    }
+    @media (max-width: 422px){
+      display: block;
+      margin-top: 10px;
+    }
+  }
+  .btn-clients{
+    margin-left: 40px;
+    @if $adaptive == true {
+      @media (max-width: 1183px){
+        margin-left: 10px;
+      }
+      @media (max-width: 462px){
+        margin-left: 0;
+      }
+      @media (max-width: 422px){
+        margin-left: 20px;
+      }
+    }
+  }
+}
 
+.clients-item{
+  display: inline-block;
+  vertical-align: middle;
+  width: 170px;
+  height: 45px;
+  position: relative;
+  @if $adaptive == true {
+    @media (max-width: 422px){
+      width: 120px;
+    }
+  }
+  &:after{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 1px;
+    height: 30px;
+    background-color: #cccccc;
+    top: 50%;
+    margin-top: -15px;
+    right: 0;
+  }
+  img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+}
 
+.btn-clients{
+  color: #a2a2a2;
+  font-size: 12px;
+  font-weight: 300;
+  &:hover,&:focus{
+    color: #ff8a00;
+    i{
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAGCAYAAAAPDoR2AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAAAMElEQVQI12P438Xw/38Xw38GBgYGZDYc4FLAiKyAgYGBgbGMgRHGZmIgBHDai89BAEHBLgyeH//1AAAAAElFTkSuQmCC);
+    }
+  }
+  i{
+    vertical-align: middle;
+    margin-left: 8px;
+    transition: .2s all;
+  }
+}
 
+.clients-item5{
+  @if $adaptive == true {
+    @media (max-width: 1153px){
+      display: none;
+    }
+  }
+  &:after{
+    display: none;
+  }
+}
+
+.clients-item4{
+  @if $adaptive == true {
+    @media (max-width: 1153px){
+      &:after{
+        display: none;
+      }
+    }
+    @media (max-width: 983px){
+      display: none;
+    }
+  }
+}
+
+.clients-item3{
+  @if $adaptive == true {
+    @media (max-width: 983px){
+      &:after{
+        display: none;
+      }
+    }
+    @media (max-width: 809px){
+      display: none;
+    }
+  }
+}
+
+.clients-item2{
+  @if $adaptive == true {
+    @media (max-width: 809px){
+      &:after{
+        display: none;
+      }
+    }
+    @media (max-width: 635px){
+      display: none;
+    }
+  }
+}
+
+.clients-item1{
+  @if $adaptive == true {
+    @media (max-width: 635px){
+      &:after{
+        display: none;
+      }
+    }
+  }
+}
 
 
 
