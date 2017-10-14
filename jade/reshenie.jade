@@ -1,0 +1,107 @@
+extends layouts/html.jade
+block content
+    .bread-line.bread-line-mod
+        .inner
+            .container-fluid
+                .row
+                    .col-md-12
+                        .name-razdel
+                            i.icon.icon-ipatc
+                            span IP-АТС
+                        .bread-crumbs
+                            a(href="#") Главная
+                            i.icon.icon-arrow-grey
+                            a(href="#") IP-АТС
+    .reshenie-content
+        .inner
+            .container-fluid
+                .row
+                    .col-md-12
+                        h2 Все готовые решения
+                        .bis-line.clearfix
+                            a.bis-item(href="#")
+                                i.icon.icon-resh1
+                                span Малый бизнес
+                            a.bis-item(href="#")
+                                i.icon.icon-resh2
+                                span Средний бизнес
+                            a.bis-item(href="#")
+                                i.icon.icon-resh3
+                                span Крупный бизнес
+                            a.bis-item(href="#")
+                                i.icon.icon-resh4
+                                span Компоненты решений
+                            a.bis-item(href="#")
+                                i.icon.icon-resh5
+                                span Техническая поддержка
+                        .resh-slider
+                            ul#ip.gallery.content-slider.list-unstyled.clearfix
+                                li
+                                    .resh-item
+                                        h3
+                                            |Малый бизнес
+                                            br
+                                            span (до 50 человек)
+                                        h4
+                                            | 55 000
+                                            span  руб.
+                                        p
+                                            | Стоимость всех работ, сервера и
+                                            br
+                                            |  прямого московского номера
+                                li
+                                    .resh-item
+                                        h3
+                                            |Средний бизнес
+                                            br
+                                            span (от 50 до 100 человек)
+                                        h4
+                                            | 85 000
+                                            span  руб.
+                                        p
+                                            | Стоимость всех работ и прямого
+                                            br
+                                            |  московского номера
+                                li
+                                    .resh-item
+                                        h3
+                                            |Крупный бизнес
+                                            br
+                                            span (от 100 человек)
+                                        h4
+                                            span от
+                                            | 129 000
+                                            span  руб.
+                                        p
+                                            | тоимость всего комплекса
+                                            br
+                                            |  работ
+                                li
+                                    .resh-item
+                                li
+                                    .resh-item
+                                li
+                                    .resh-item
+    .clients
+        .inner
+            .container-fluid
+                .row
+                    .col-xs-12
+                        h2
+                            | Наши
+                            br
+                            | клиенты
+                        .clients-content
+                            .clients-item.clients-item1
+                                img(src="img/client1.png")
+                            .clients-item.clients-item2
+                                img(src="img/client2.png")
+                            .clients-item.clients-item3
+                                img(src="img/client3.png")
+                            .clients-item.clients-item4
+                                img(src="img/client4.png")
+                            .clients-item.clients-item5
+                                img(src="img/client5.png")
+                            a.btn.btn-clients(href="#")
+                                | Посмотреть все
+                                i.icon.icon-2arrow
